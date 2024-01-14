@@ -10,15 +10,33 @@
     margin-bottom: 25px;
 }
 
+.subtitle__fases {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
 .subtitle__about {
     color: #333333;
     font-size: 1.2rem;
     margin-bottom: 25px;
 }
 
+ul {
+    list-style: none; /* Quitamos los marcadores */
+    padding: 0; /* Quitamos el padding por defecto de la lista */
+    margin-left: 10px; /* Separamos la lista de la izquierda */
+    }
+    
+    li::before { /* Añadimos contenido antes de cada elemento de la lista */
+    content: "\2022"; /* Insertamos el marcador */
+    padding-right: 8px; /* Establecemos el espacio entre las viñetas y el list item */
+    color: white; /* Coloreamos la viñeta */
+    }
+
 .about__paragrah {
     color: #333333;
-    line-height: 1.7;
+    line-height: 1.2;
     text-align: left;
     text-align: center;
 }
@@ -67,21 +85,53 @@
     align-items: center;
 }
 
+.knowledgee__container{
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
 .knowledge__picture{
     max-width: 500px;
 }
 
+.knowledge__picturee{
+    max-width: 50x;
+}
+
 .knowledge__paragraph{
     line-height: 1.8;
-    font-size: 1.2em;
+    font-size: 0.9em;
     margin-bottom: 15px;
     color: #fff;
     text-align: justify;
 }
 
+.know__izq{
+    line-height: 1.8;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: right;
+}
+
 .subtitle {
     color: #fff;
     font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.subtitle2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: right;
+}
+
+.subtitle__a {
+    color: #dfc800;
+    font-size: 1.2rem;
     margin-bottom: 25px;
 }
 
@@ -102,6 +152,19 @@
 .knowledge__img{
     width: 100%;
     display: block;
+    border-radius: 10px;
+}
+
+.knowledge__video{
+    width: 195%;
+    display: block;
+    border-radius: 10px;
+}
+
+.knowledgee__img{
+    width: 60%;
+    display:grid;
+    align-items: center;
     border-radius: 10px;
 }
 
@@ -208,6 +271,13 @@
 
 
     .knowledge__container{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 3em;
+        text-align: center;
+    }
+
+    .knowledgee__container{
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
         gap: 3em;
